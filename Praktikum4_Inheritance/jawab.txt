@@ -1,0 +1,71 @@
+// nama file : jawab.txt
+// deskripsi : jawaban pertanyaan modul 4
+// pembuat   : MUHAMMAD YAZID LUBIS // 24060123140170
+// tanggal   : 13 maret 2025
+
+
+1.
+Apakah konstruktor berparameter pada kelas Persegi dapat direalisasikan seperti berikut?
+Mengapa?
+
+public Persegi(double sisi, String warna, String border){
+this.jmlSisi = 4;
+this.warna = warna;
+this.border = border;
+this.sisi = sisi;
+}
+
+jawab:
+tidak bisa, karena atributnya bersifat private.
+jadi harus diakses dengan yang memiliki class sama.
+
+
+2.
+coba lakukan overriding pada method printCounterBangunDatar().
+Bagaimana hasilnya?
+
+Jawab :
+printCounterBangunDatar pada kelas BangunDatar tidak bisa dioverriding di subclassnya karena punya modifier yang static.
+
+
+3.
+Modifikasilah atribut class BangunDatar dengan access modifier protected. Setelah modifikasi
+tersebut, apakah konstruktor berparameter pada kelas Persegi dapat direalisasikan seperti berikut?
+Mengapa?
+
+public Persegi(double sisi, String warna, String border){
+this.jmlSisi = 4;
+this.warna = warna;
+this.border = border;
+this.sisi = sisi;
+}
+
+jawab :
+bisa, karena adanya access protected pada jmlsisi, warna, dan border di superclass BangunDatar.
+jadi dia bisa langsung diakses tanpa harus menggunakan super().
+
+
+4.
+Keyword final yang diberikan pada kelas menjadikan kelas tersebut tidak dapat diwariskan, sedangkan
+keyword final yang diberikan pada method menjadikan method tersebut tidak dapat di-override pada
+subkelasnya.
+Lakukan eksperimen penggunaan keyword final seperti berikut:
+
+4.1.1 Tambahkan keyword final pada kelas BangunDatar. Bagaimana pengaruhnya terhadap kelas
+Persegi dan Lingkaran?
+
+jawab :
+jika final ditambahkan pada kelas BangunDatar, maka class ini 
+tidak bisa diwariskan oleh class lain speerti class persegi dan Lingkaran karena BangunDatar sudah final.
+
+
+
+4.1.2. Hapus kembali keyword final pada kelas BangunDatar, lalu tambahkan keyword final pada method
+printInfo() di dalam kelas BangunDatar. Bagaimana pengaruhnya dengan method printInfo() pada
+kelas Persegi dan Lingkaran?
+
+jawab :
+jika kita tidak menambahkan final pada kelas BangunDatar, 
+tetapi hanya menambahkan final pada method printInfo(), 
+maka subclass masih bisa dibuat, tetapi method printInfo() 
+tidak bisa di-override.
