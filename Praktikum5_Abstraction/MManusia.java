@@ -2,7 +2,7 @@ package Praktikum.Pertemuan5;
 
 /* File        : MManusia.java
  * Penjelasan  : Program utama untuk menjalankan contoh penggunaan hierarki kelas Manusia
- * Programmer  : MUHAMMAD YAZID LUBIS / 24060123140170
+ * Pembuat  : MUHAMMAD YAZID LUBIS / 24060123140170
  * Dibuat pada : 20 Maret 2025
  */
 
