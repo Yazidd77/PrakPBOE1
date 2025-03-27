@@ -1,7 +1,7 @@
 // file          : JawabanSoal.txt
-// keterangan    : penyelesaian soal praktikum minggu ke-5
-// oleh          : MUHAMMAD YAZID LUBIS // 24060123140170
-// dibuat        : 20 Maret 2025
+// deskripsi    : penyelesaian soal praktikum minggu ke-5
+// pembuat         : MUHAMMAD YAZID LUBIS // 24060123140170
+// tanggal        : 20 Maret 2025
 
 ------------------------- BAGIAN I: KELAS ABSTRAK -------------------------
 
