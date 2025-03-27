@@ -2,7 +2,7 @@ package Praktikum.Pertemuan5;
 
 /* File        : Pajak.java
  * Penjelasan  : Interface untuk implementasi perhitungan pajak pada berbagai jenis manusia
- * Programmer  : MUHAMMAD YAZID LUBIS / 24060123140170
+ * Pembuat  : MUHAMMAD YAZID LUBIS / 24060123140170
  * Dibuat pada : 20 Maret 2025
  */
 
