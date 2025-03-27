@@ -2,7 +2,7 @@ package Praktikum.Pertemuan5;
 
 /* File        : Petani.java
  * Penjelasan  : Kelas turunan dari Manusia yang merepresentasikan Petani
- * Programmer  : MUHAMMAD YAZID LUBIS / 24060123140170
+ * Pembuat     : MUHAMMAD YAZID LUBIS / 24060123140170
  * Dibuat pada : 20 Maret 2025
  */
 
