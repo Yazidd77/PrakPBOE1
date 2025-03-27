@@ -1,7 +1,6 @@
 // nama file    : Persegi.java
-// deskripsi    : program ini berisi class Persegi yang merupakan subclass dari superclass BangunDatar
-// pembuat      : shopia mudjahidah
-// nim          : 24060123120010
+// deskripsi    : program ini berisi class Lingkaran yang merupakan subclass dari superclass BangunDatar
+// pembuat      : MUHAMMAD YAZID LUBIS // 24060123140170
 // tanggal      : 20 Maret 2025
 
 public class Persegi extends BangunDatar implements IResize{
