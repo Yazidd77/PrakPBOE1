@@ -3,7 +3,7 @@ package Praktikum.Pertemuan5;
 
 /* File        : Manusia.java
  * Penjelasan  : Class abstrak Manusia dengan atribut dan method untuk operasi dasar entitas Manusia
- * Programmer  : MUHAMMAD YAZID LUBIS / 24060123140170
+ * Pembuat  : MUHAMMAD YAZID LUBIS / 24060123140170
  * Dibuat pada : 20 Maret 2025
  */
 
