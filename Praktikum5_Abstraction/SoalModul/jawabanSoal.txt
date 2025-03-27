@@ -1,0 +1,108 @@
+// file          : JawabanSoal.txt
+// keterangan    : penyelesaian soal praktikum minggu ke-5
+// oleh          : MUHAMMAD YAZID LUBIS // 24060123140170
+// dibuat        : 20 Maret 2025
+
+------------------------- BAGIAN I: KELAS ABSTRAK -------------------------
+
+Pertanyaan No.3:
+    Lakukan percobaan dengan memanfaatkan tipe referensi BangunDatar
+    ketika menciptakan objek Lingkaran dan Persegi seperti contoh
+    berikut:
+        BangunDatar B1 = new BangunDatar();
+        BangunDatar P1 = new Persegi(10);
+        Persegi P2 = new Persegi(5);
+        BangunDatar L1 = new Lingkaran(7);
+        Lingkaran L1 = new Lingkaran (14);
+    Dari pembuatan objek dengan pola di atas, apakah terdapat
+    kode yang mengalami masalah saat dieksekusi?
+
+jawab:
+    Kode BangunDatar B1 = new BangunDatar(); akan menghasilkan
+    error ketika dijalankan. Hal ini terjadi karena BangunDatar
+    merupakan kelas abstrak, sehingga tidak mungkin dibuat
+    instansiasinya secara langsung. Kelas abstrak hanya bisa
+    digunakan sebagai referensi untuk objek dari kelas turunannya.
+
+Pertanyaan No.5a:
+    Apakah fungsi yang dibuat pada nomor 4 dapat diaplikasikan
+    untuk membandingkan objek bangun datar dengan jenis berbeda?
+
+jawab:
+    Benar, fungsi isEqualLuas() dan isEqualKeliling() yang
+    dikembangkan pada langkah 4 mampu membandingkan objek-objek
+    dengan tipe yang berbeda, seperti antara Persegi dan Lingkaran.
+    Ini dimungkinkan karena kedua metode tersebut hanya
+    membandingkan nilai numerik (luas atau keliling) tanpa
+    memperhatikan tipe bentuknya. Dengan demikian, dua objek
+    geometri yang berbeda bentuk tetapi memiliki luas atau
+    keliling identik akan dianggap sama dalam konteks perbandingan
+    ini.
+
+Pertanyaan No.5b:
+    Bila BangunDatar tidak dideklarasikan sebagai kelas abstrak,
+    apakah dimungkinkan untuk mengimplementasikan metode isEqualLuas()
+    dan isEqualKeliling() di kelas BangunDatar? Jelaskan alasannya.
+
+jawab:
+    Jika BangunDatar bukan kelas abstrak, terdapat risiko bahwa
+    metode getLuas() dan getKeliling() tidak diimplementasikan
+    dengan tepat di semua kelas turunannya. Konsekuensinya,
+    pemanggilan isEqualLuas() dan isEqualKeliling() berpotensi
+    menghasilkan error runtime, karena kedua metode tersebut
+    bergantung pada implementasi getLuas() dan getKeliling().
+    Dengan menetapkan BangunDatar sebagai kelas abstrak, kita
+    memastikan bahwa setiap kelas turunan wajib menyediakan
+    implementasi konkret untuk metode-metode abstrak tersebut,
+    sehingga operasi perbandingan dapat berjalan dengan aman.
+
+Pertanyaan No.5c:
+    Apa keunggulan menggunakan kelas abstrak untuk BangunDatar
+    dibandingkan menggunakan kelas non-abstrak?
+
+jawab:
+    Penerapan BangunDatar sebagai kelas abstrak memberikan
+    beberapa keunggulan signifikan. Pertama, kita dapat menjamin
+    bahwa setiap bangun geometri datar (seperti Persegi dan
+    Lingkaran) memiliki implementasi spesifik untuk perhitungan
+    luas dan keliling, mencegah kemungkinan adanya objek tanpa
+    definisi operasi yang jelas. Kedua, pendekatan ini memungkinkan
+    penggunaan polimorfisme yang lebih efektif, di mana referensi
+    tipe BangunDatar dapat digunakan untuk menampung berbagai
+    bentuk geometri tanpa mengorbankan fungsionalitas khususnya.
+    Hal ini sangat bermanfaat dalam operasi seperti perbandingan
+    luas atau keliling antar bangun datar yang berbeda.
+
+------------------------- BAGIAN II: ANTARMUKA -------------------------
+
+Pertanyaan No.4:
+    Lakukan uji coba pemanggilan metode dari IResize dalam
+    metode main. Bagaimana hasilnya?
+
+jawab:
+    Pengujian pemanggilan metode dari antarmuka IResize
+    menunjukkan bahwa operasi perubahan ukuran pada objek
+    Persegi dan Lingkaran berfungsi sesuai harapan. Ketika
+    metode zoomIn() dipanggil, dimensi objek (jari-jari
+    lingkaran atau panjang sisi persegi) bertambah sebesar
+    10%. Sebaliknya, pemanggilan zoomOut() efektif mengurangi
+    dimensi tersebut sebesar 10% dari nilai semula.
+
+Pertanyaan:
+    Apa manfaat mengemas metode zoomIn(), zoomOut(), dan zoom()
+    dalam antarmuka IResize dibandingkan menjadikannya sebagai
+    metode abstrak dalam kelas BangunDatar?
+
+jawab:
+    Implementasi metode zoomIn(), zoomOut(), dan zoom() melalui
+    antarmuka IResize memberikan fleksibilitas yang jauh lebih
+    tinggi dibandingkan pendekatan metode abstrak dalam kelas
+    BangunDatar. Dengan antarmuka, berbagai kelas dari hierarki
+    yang berbeda dapat menerapkan fungsionalitas perubahan ukuran
+    tanpa harus terikat pada struktur pewarisan tertentu. Sebagai
+    perbandingan, jika metode-metode tersebut ditempatkan di kelas
+    BangunDatar sebagai metode abstrak, maka hanya kelas-kelas
+    yang merupakan turunan dari BangunDatar yang dapat
+    mengimplementasikannya. Hal ini akan membatasi kemampuan
+    untuk menerapkan fungsionalitas perubahan ukuran pada objek-objek
+    yang bukan merupakan bagian dari hierarki BangunDatar.
