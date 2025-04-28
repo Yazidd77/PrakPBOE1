@@ -24,3 +24,32 @@ public class TestPolimorfisme {
     }
     
 }
+
+
+// apa manfaat polimorfisme pada kasus ini ?
+/*
+
+jawab : 
+kita dapat menyimpan objek dari kelas turunan 
+yang berbeda (seperti programmer dan manajer) dalam satu wadah array List 
+yang bertipe pegawai. terus juga penggunaan interface yang ssergam.
+jadi semua objek pegawai dapat diperlakukan dengan cara yang sama
+melalui interface pegawai, tetapi akan berperilaku
+sesuai dengan implementasi spesifiknya.
+
+*/
+
+//apa permasalahan yang muncul jika implementasi ini tidak diterapkan dengan polimorfisme??
+/*
+
+jawab :
+-tipe data yang eksplisit
+-pemrosesan data yang rumit
+-kode yang lebih panjang
+-sulit untuk diperluas
+-duplikasi kode
+
+*/
+
+
+
