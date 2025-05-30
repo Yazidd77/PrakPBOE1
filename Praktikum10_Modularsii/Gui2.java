@@ -9,7 +9,7 @@ import javax.swing.JMenuItem;
 
 /**
  *
- * @author shopi
+ * @author user
  */
 public class Gui2 extends javax.swing.JFrame {
     
