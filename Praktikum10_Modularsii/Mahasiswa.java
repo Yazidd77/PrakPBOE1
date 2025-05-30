@@ -6,7 +6,7 @@ package jdbc.model;
 
 /**
  *
- * @author shopi
+ * @author user
  */
 public class Mahasiswa {
     private int id;
