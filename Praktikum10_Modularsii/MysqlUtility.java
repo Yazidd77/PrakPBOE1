@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author shopi
+ * @author user
  */
 public class MysqlUtility {
     private static Connection koneksi;
