@@ -14,7 +14,7 @@ import javax.swing.JMenuItem;
 
 /**
  *
- * @author shopi
+ * @author user
  */
 public class Gui4 extends javax.swing.JFrame {
     
