@@ -6,7 +6,7 @@ package jdbc.service;
 
 /**
  *
- * @author shopi
+ * @author user
  */
 
 import jdbc.model.Mahasiswa;
